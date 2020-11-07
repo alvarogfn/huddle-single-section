@@ -22,7 +22,7 @@ body {
   background: #674baf url("./../images/bg-mobile.svg") no-repeat;
   background-size: 100vw auto;
   
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   color: white;
 
@@ -58,3 +58,18 @@ ul {
 }
 
 /* specifity: class */
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-basis: 100px;
+  
+}
+  .header__logo {
+    width: 40%;
+  }
