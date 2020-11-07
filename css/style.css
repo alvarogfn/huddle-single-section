@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*- Violet: #674baf */
+
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  /*  font-family: 'Poppins', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  /*  font-family: 'Open Sans', sans-serif; */
+
+:root {
+  font-size: 62.5%;
+}
+
+a {
+  color: white;
+
+  text-decoration: none;
+}
+
+body {
+  background: #674baf url("./../images/bg-mobile.svg") no-repeat;
+  background-size: 100vw auto;
+  
+  border: 1px solid red;
+
+  color: white;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  margin: 0 auto;
+
+  width: 80%;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+main {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+
+  flex-flow: row nowrap;
+}
+
+/* specifity: class */
