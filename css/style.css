@@ -116,6 +116,54 @@ ul {
   padding: .9rem 6.75rem;
 }
 
+.footer {
+  margin: 4.7rem auto 0;
+  
+  text-indent: -999px;
+
+}
+  .footer__link {
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: center center;
+  
+    border: 1px solid black;
+    border-radius: 1.25rem;
+
+    display: block;
+
+    height: 12px;
+
+    margin: 0 .5rem;
+
+    padding: .525rem;
+  
+    width: 12px;
+  }
+
+    .footer__link--linkedin {
+      background-image: url("./../images/logo-linkedin.svg"); 
+      filter: invert(100%);  
+    }
+
+    .footer__link--twitter {
+      background-image: url("./../images/logo-twitter.svg");
+      filter: invert(100%);
+    }
+    
+    .footer__link--github {
+      background-image: url("./../images/logo-github.svg");
+      filter: invert(100%);
+    }
+
+    .footer__link--frontendmentor {
+      background-image: url("./../images/favicon-32x32.png");
+      filter: invert(100%);
+    }
+    
+    
+
+
 .header {
   align-items: center;
   display: flex;
