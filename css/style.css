@@ -58,7 +58,8 @@ ul {
   flex-flow: row nowrap;
 }
 
-/* specifity: class */
+/* specifity: class */ 
+/*////////////////////// Mobile //////////////////////*/
 
 .article {
   align-items: center;
@@ -119,7 +120,7 @@ ul {
 .footer {
   margin: 4.7rem auto 0;
   
-  text-indent: -999px;
+  text-indent: -9999px;
 
 }
   .footer__link {
@@ -161,9 +162,6 @@ ul {
       filter: invert(100%);
     }
     
-    
-
-
 .header {
   align-items: center;
   display: flex;
@@ -177,5 +175,104 @@ ul {
 .main {
   flex-basis: 500px;
 
-  margin-top: 2.5rem;
+  margin: 2.5rem 0;
+}
+
+/*/////////////////////// desktop ////////////////////////////*/
+@media screen and (orientation: landscape) and (min-width: 900px) {
+  body {
+    background-image: url("./../images/bg-desktop.svg");
+    background-size: contain;
+
+    height: 100vh;
+  
+    width: 100vw;
+    
+  }
+
+  .article {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 100%;
+  }
+
+    .article__about {
+      margin-top: .5rem;
+      font-size: 1.65rem;
+      line-height: 2.5rem;
+      text-align: left;
+    }
+  
+    .article__img {
+      width: 54.5%;
+    }
+
+    .article__section {
+      align-self: flex-start;
+      display: flex;
+      flex-basis: 80%;
+      flex-flow: row wrap;
+    
+      margin-left: 4.9rem;
+
+      margin-top: -1.65rem;
+      
+    }
+    
+    .article__title {
+      font-size: 3.55rem;
+
+      line-height: 5.5rem;
+
+      text-align: left;
+    }
+  
+  .Btn-register {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .35);
+    padding: 1.3rem 5.85rem;
+    font-size: 1.6rem;
+  }
+
+  .container {
+    flex-flow: row wrap;
+
+    margin: 4.5rem auto;
+
+    width: 90%;
+  }
+
+  .footer {
+    align-self: flex-end;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+
+    margin: 0;
+
+  }
+    .footer__link {
+
+      background-size: 19px 19px;   
+
+      border-radius: 2rem;
+  
+      height: 23.5px;
+  
+      margin: 0 .75rem;
+    
+      width: 23.5px;
+    }
+
+  .header {
+    align-self: flex-start;
+    flex-basis: 100%;
+  }
+    .header__logo {
+      width: 16.5%;
+      margin-bottom: 5.15rem;
+    }
+
+  .main {
+    flex-basis: 100%;
+  }
 }
