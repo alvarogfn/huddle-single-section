@@ -8,6 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
   /*  font-family: 'Open Sans', sans-serif; */
 
+/* Animation import */
+
+
 :root {
   font-size: 62.5%;
 }
@@ -144,22 +147,20 @@ ul {
 
     .footer__link--linkedin {
       background-image: url("./../images/logo-linkedin.svg"); 
-      filter: invert(100%);  
+      filter: invert(100%); 
+      transition: 400ms transform; 
     }
 
     .footer__link--twitter {
       background-image: url("./../images/logo-twitter.svg");
       filter: invert(100%);
+      transition: 400ms transform;
     }
     
     .footer__link--github {
       background-image: url("./../images/logo-github.svg");
       filter: invert(100%);
-    }
-
-    .footer__link--frontendmentor {
-      background-image: url("./../images/favicon-32x32.png");
-      filter: invert(100%);
+      transition: 400ms transform;
     }
     
 .header {
@@ -182,12 +183,11 @@ ul {
 @media screen and (orientation: landscape) and (min-width: 900px) {
   body {
     background-image: url("./../images/bg-desktop.svg");
-    background-size: contain;
+    background-size: cover;
 
     height: 100vh;
   
     width: 100vw;
-    
   }
 
   .article {
@@ -205,6 +205,7 @@ ul {
   
     .article__img {
       width: 54.5%;
+      animation: floatIMG 1s infinite alternate-reverse linear;
     }
 
     .article__section {
@@ -231,10 +232,25 @@ ul {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .35);
     padding: 1.3rem 5.85rem;
     font-size: 1.6rem;
+    transition: 400ms color, 400ms background-color, 200ms transform;
+  }
+
+  .Btn-register:active {
+    transform: scale(1.1);
+  }
+
+
+  .Btn-register:hover {
+    background-color: #674baf;
+    padding: 1.1rem 5.65rem;
+    border: .2rem solid white;
+    color: white;
   }
 
   .container {
     flex-flow: row wrap;
+
+    height: 100%;
 
     margin: 4.5rem auto;
 
@@ -263,6 +279,24 @@ ul {
       width: 23.5px;
     }
 
+    .footer__link--linkedin:hover {
+      background-image: url("./../images/logo-linkedin.svg"); 
+      filter: invert(100%);
+      transform: scale(1.2);      
+    }
+
+    .footer__link--twitter:hover {
+      background-image: url("./../images/logo-twitter.svg");
+      filter: invert(100%);
+      transform: scale(1.2);
+    }
+    
+    .footer__link--github:hover {
+      background-image: url("./../images/logo-github.svg");
+      filter: invert(100%);
+      transform: scale(1.2);
+    }
+
   .header {
     align-self: flex-start;
     flex-basis: 100%;
@@ -274,5 +308,17 @@ ul {
 
   .main {
     flex-basis: 100%;
+  }
+}
+
+/* animations */
+
+@keyframes floatIMG {
+  0% {
+    transform: rotate3d(0, 0, 1, .5deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, -.5deg);
   }
 }
