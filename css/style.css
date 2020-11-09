@@ -121,7 +121,7 @@ ul {
 }
 
 .footer {
-  margin: 4.7rem auto 0;
+  margin: 4.7rem auto 2rem;
   
   text-indent: -9999px;
 
@@ -176,7 +176,7 @@ ul {
 .main {
   flex-basis: 500px;
 
-  margin: 2.5rem 0;
+  margin-top: 2.5rem;
 }
 
 /*/////////////////////// desktop ////////////////////////////*/
