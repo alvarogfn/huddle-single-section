@@ -180,7 +180,7 @@ ul {
 }
 
 /*/////////////////////// desktop ////////////////////////////*/
-@media screen and (orientation: landscape) and (min-width: 720px) {
+@media screen and (orientation: landscape) and (min-width: 1020px) {
   body {
     background-image: url("./../images/bg-desktop.svg");
     background-size: cover;
