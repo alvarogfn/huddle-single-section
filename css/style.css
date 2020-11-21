@@ -43,7 +43,7 @@ img {
   width: 100%;
 }
 
-h1 {
+h2 {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -80,6 +80,10 @@ ul {
   line-height: 2.15rem;
 
   margin: 1.3rem 0 2.1rem;
+}
+
+.article__acessibilityTitle {
+  display: none;
 }
 
 .article__img {
